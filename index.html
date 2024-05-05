@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="header">
+        <h1>Weather for today:</h1>
+        <input
+          class="input"
+          spellcheck="false"
+          type="text"
+          placeholder="Please enetr city..."
+        />
+      </div>
+
+      <div id="whenWhere">
+        <p id="city"></p>
+        <p id="date"></p>
+      </div>
+      <div class="now">
+        <div class="temp">
+          <p id="temperatureInС"></p>
+          <p id="temperatureInF"></p>
+        </div>
+        <div class="feels">
+          <p id="feelslikeinc"></p>
+          <p id="feelslikeinf"></p>
+        </div>
+      </div>
+
+      <div class="wind">
+        <p id="wind_mph"></p>
+        <p id="wind_kph"></p>
+      </div>
+
+      <div class="info">
+        <p id="humidity"></p>
+        <p id="cloud"></p>
+        <p id="pressure_mb"></p>
+        <p id="pressure_in"></p>
+        <p id="uv"></p>
+      </div>
+
+      <div class="quotes">
+        <button onclick="displayAdvice()" id="btn2">
+          Click to get an advice:
+        </button>
+        <p id="quote"></p>
+      </div>
+    </div>
+  </body>
+</html>
