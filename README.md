@@ -21,7 +21,8 @@ Usage:
 5. Click "Click to get an advice" button for getting advice specificly for this location.
 
 To see a result and advise you need to enter teh city first:
-![Screenshot 2024-05-05 at 1 20 07 PM](https://github.com/OlenaShevelenko31/SBA-308A-Weather-app/assets/163446129/8deaab37-396e-42ae-8ee1-8b12078141d8)
+<img width="908" alt="Screenshot 2024-05-05 at 2 31 46 PM" src="https://github.com/OlenaShevelenko31/SBA-308A-Weather-app/assets/163446129/46ad9ecf-eee6-43ed-9d48-ebb79d78ec80">
+
 
 For example, you entered Miami to see the weather there:
 <img width="965" alt="Screenshot 2024-05-05 at 1 24 29 PM" src="https://github.com/OlenaShevelenko31/SBA-308A-Weather-app/assets/163446129/8c7360fc-5633-4417-a7d1-38f8e6c00190">
