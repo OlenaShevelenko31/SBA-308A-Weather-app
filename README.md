@@ -26,5 +26,7 @@ To see a result and advise you need to enter teh city first:
 For example, you entered Miami to see the weather there:
 <img width="965" alt="Screenshot 2024-05-05 at 1 24 29 PM" src="https://github.com/OlenaShevelenko31/SBA-308A-Weather-app/assets/163446129/8c7360fc-5633-4417-a7d1-38f8e6c00190">
 
+To see an advice -> "Click to get an advice:" button :
+<img width="1033" alt="Screenshot 2024-05-05 at 1 27 38 PM" src="https://github.com/OlenaShevelenko31/SBA-308A-Weather-app/assets/163446129/072272d1-3a42-402a-959c-6ed33d87b76f">
 
 
