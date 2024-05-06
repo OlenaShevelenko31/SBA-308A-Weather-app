@@ -1,7 +1,5 @@
-const api = {
-    link: "https://api.weatherapi.com/v1/current.json",
-    key: "1a330ff7b099465db4d202400240305"
-};
+
+import { api } from "./module.js";
 
 document.querySelector(".input").addEventListener("keypress", enter);
 
@@ -88,41 +86,42 @@ function getOurDate (){
 
 // advice --------------------------------
 
+document.getElementById("btn2").addEventListener("click", displayAdvice);
+
 function displayAdvice() {
     const adviceContainer = document.getElementById("quote");
-    let weatherCondition = document.querySelector("#cloud").textContent;
-    console.log(weatherCondition);
+    let weatherCondition = document.querySelector("#cloud").textContent.trim();
 
 if (weatherCondition) {
-  if (weatherCondition.includes("sunny")) {
+  if (weatherCondition.toLowerCase().includes("sunny")) {
     adviceContainer.innerHTML = "Don't forget to put on SPF!";
-  } else if (weatherCondition.includes("Clear")) {
+  } else if (weatherCondition.toLowerCase().includes("clear")) {
     adviceContainer.innerHTML = "Don't forget to put on SPF anyway!";
-  }else if (weatherCondition.includes("rain")) {
+  }else if (weatherCondition.toLowerCase().includes("rain")) {
     adviceContainer.innerHTML = "Remember to bring an umbrella!";
-  } else if (weatherCondition.includes("cloud")) {
+  } else if (weatherCondition.toLowerCase().includes("cloud")) {
     adviceContainer.innerHTML = "It might rain later, so be prepared!";
-  } else if (weatherCondition.includes("wind")) {
+  } else if (weatherCondition.toLowerCase().includes("wind")) {
     adviceContainer.innerHTML = "Hold onto your hats, it's windy out there!";
-  } else if (weatherCondition.includes("snow")) {
+  } else if (weatherCondition.toLowerCase().includes("snow")) {
     adviceContainer.innerHTML = "Bundle up, it's snowing!";
-  } else if (weatherCondition.includes("overcast")) {
+  } else if (weatherCondition.toLowerCase().includes("overcast")) {
     adviceContainer.innerHTML = "Expect overcast skies.";
-  } else if (weatherCondition.includes("patchy sleet possible")) {
+  } else if (weatherCondition.toLowerCase().includes("patchy sleet possible")) {
     adviceContainer.innerHTML = "Watch out for possible sleet.";
-  } else if (weatherCondition.includes("patchy freezing drizzle possible")) {
+  } else if (weatherCondition.toLowerCase().includes("patchy freezing drizzle possible")) {
     adviceContainer.innerHTML = "Be cautious of freezing drizzle.";
-  } else if (weatherCondition.includes("blizzard")) {
+  } else if (weatherCondition.toLowerCase().includes("blizzard")) {
     adviceContainer.innerHTML = "Stay indoors, it's a blizzard!";
-  } else if (weatherCondition.includes("fog")) {
+  } else if (weatherCondition.toLowerCase().includes("fog")) {
     adviceContainer.innerHTML = "Drive carefully in the fog.";
-  } else if (weatherCondition.includes("drizzle")) {
+  } else if (weatherCondition.toLowerCase().includes("drizzle")) {
     adviceContainer.innerHTML = "Take an umbrella for the drizzle.";
-  } else if (weatherCondition.includes("sleet")) {
+  } else if (weatherCondition.toLowerCase().includes("sleet")) {
     adviceContainer.innerHTML = "Beware of sleet.";
-  } else if (weatherCondition.includes("ice pellets")) {
+  } else if (weatherCondition.toLowerCase().includes("ice pellets")) {
     adviceContainer.innerHTML = "Be cautious of ice pellets.";
-  } else if (weatherCondition.includes("thunder")) {
+  } else if (weatherCondition.toLowerCase().includes("thunder")) {
     adviceContainer.innerHTML = "Stay indoors during thunderstorms.";
   } else {
     adviceContainer.innerHTML = "No specific advice for this condition";
@@ -131,9 +130,8 @@ if (weatherCondition) {
   adviceContainer.innerHTML = "No specific advice. Enter the city!";
 }
     
-    
 
-    
+
 }
 
 
